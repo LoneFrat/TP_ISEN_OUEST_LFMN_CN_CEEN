@@ -74,13 +74,41 @@
             margin: 2rem 0;
         }
         
-        /* FOOTER PLACEHOLDER */
-        footer {
+        /* FOOTER SIMPLE (F26) */
+        .footer-simple {
             background-color: #003366;
             color: white;
             padding: 2rem;
             margin-top: auto;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
             text-align: center;
+        }
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        .footer-section p, .footer-section a {
+            color: #cccccc;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .footer-section a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #004488;
+            color: #cccccc;
         }
     </style>
 </head>
@@ -116,10 +144,34 @@
         </div>
     </main>
 
-    <!-- FOOTER TEMPORAIRE -->
-    <footer>
-        <p>Footer à compléter dans F26</p>
-        <p>© 2024 ISEN Ouest</p>
+    <!-- FOOTER SIMPLE (F26) -->
+    <footer class="footer-simple">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Nos Campus</h3>
+                <p>Brest</p>
+                <p>Nantes</p>
+                <p>Rennes</p>
+                <p>Caen</p>
+            </div>
+            <div class="footer-section">
+                <h3>Informations</h3>
+                <a href="postbac.html">Formation Post-Bac</a>
+                <a href="formations.html">Spécialisations</a>
+                <a href="apprentissage.html">Alternance</a>
+                <a href="contact.html">Admission</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact & Réseaux</h3>
+                <p>info@isen-ouest.fr</p>
+                <p>+33 (0)2 98 00 00 00</p>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 ISEN Ouest - École d'Ingénieurs - Tous droits réservés</p>
+        </div>
     </footer>
 </body>
 </html>
