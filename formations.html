@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations - ISEN Ouest</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* HEADER SIMPLE (F25) */
+        .header-simple {
+            background-color: #003366;
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header-simple h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .header-nav {
+            display: flex;
+            gap: 2rem;
+        }
+        .header-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .header-nav a:hover {
+            background-color: #002244;
+        }
+        .header-nav a.active {
+            background-color: #004488;
+            font-weight: bold;
+        }
+        
+        /* MAIN CONTENT */
+        main {
+            flex: 1;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        /* TEMPORARY CONTENT */
+        .temp-content {
+            background: #f8f9fa;
+            padding: 3rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        /* FOOTER PLACEHOLDER */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 2rem;
+            margin-top: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER SIMPLE (F25) -->
+    <header class="header-simple">
+        <div class="header-content">
+            <h1>ISEN OUEST</h1>
+            <nav class="header-nav">
+                <a href="index.html">Accueil</a>
+                <a href="postbac.html">Post-Bac</a>
+                <a href="formations.html" class="active">Formations</a>
+                <a href="apprentissage.html">Apprentissage</a>
+                <a href="devenir_inge.html">Devenir Ingénieur</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h1 style="color: #003366; text-align: center; margin-bottom: 2rem;">Nos Formations Ingénieurs</h1>
+        
+        <div class="temp-content">
+            <h2>Section Images à venir (F27)</h2>
+            <p>Les images des formations seront ajoutées dans la fonctionnalité F27.</p>
+            <p><strong>Formations disponibles :</strong></p>
+            <ul style="display: inline-block; text-align: left; margin-top: 1rem;">
+                <li>Cybersécurité</li>
+                <li>Développement Logiciel</li>
+                <li>Intelligence Artificielle</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- FOOTER TEMPORAIRE -->
+    <footer>
+        <p>Footer à compléter dans F26</p>
+        <p>© 2024 ISEN Ouest</p>
+    </footer>
+</body>
+</html>
