@@ -18,7 +18,7 @@
             min-height: 100vh;
         }
         
-        /* HEADER (F21) */
+        /* HEADER SIMPLE (F21) */
         .header-simple {
             background-color: #003366;
             color: white;
@@ -65,7 +65,7 @@
             width: 100%;
         }
         
-        /* TEXT_IMG SECTION (NOUVEAU - F23) */
+        /* TEXT_IMG SECTION CORRIGÉE (F23) */
         .text-img-section {
             margin: 3rem 0;
             background: white;
@@ -77,33 +77,38 @@
             display: flex;
             align-items: center;
             gap: 3rem;
-            padding: 2rem;
-        }
-        .text-img-content.reverse {
-            flex-direction: row-reverse;
+            padding: 3rem;
         }
         .text-content {
             flex: 1;
         }
         .text-content h2 {
             color: #003366;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
             border-left: 4px solid #003366;
             padding-left: 1rem;
         }
+        .text-content h3 {
+            color: #0055aa;
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
         .text-content p {
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
             color: #333;
             font-size: 1.1rem;
+            line-height: 1.7;
         }
         .text-content ul {
             margin: 1.5rem 0;
             padding-left: 2rem;
         }
         .text-content li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
             color: #555;
+            line-height: 1.6;
         }
         .img-content {
             flex: 1;
@@ -138,7 +143,7 @@
             background-color: #002244;
         }
         
-        /* FOOTER (F22) */
+        /* FOOTER SIMPLE (F22) */
         .footer-simple {
             background-color: #003366;
             color: white;
@@ -189,11 +194,14 @@
                 flex-wrap: wrap;
                 justify-content: center;
             }
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- HEADER (F21) -->
+    <!-- HEADER SIMPLE (F21) -->
     <header class="header-simple">
         <div class="header-content">
             <h1>ISEN OUEST</h1>
@@ -210,62 +218,32 @@
 
     <!-- MAIN CONTENT -->
     <main>
-        <h1 style="color: #003366; text-align: center; margin-bottom: 3rem;">Formation Post-Bac</h1>
-        
-        <!-- TEXT_IMG SECTION (NOUVEAU - F23) -->
+        <!-- TEXT_IMG SECTION CORRIGÉE (F23) -->
         <section class="text-img-section">
             <div class="text-img-content">
                 <div class="text-content">
-                    <h2>Devenez Ingénieur en 5 Ans</h2>
-                    <p>Notre formation post-bac vous accueille directement après le baccalauréat pour une formation d'ingénieur en 5 ans, alliant excellence académique et immersion professionnelle.</p>
+                    <h2>Formations post-bac</h2>
+                    <h3>Chaque étudiant construit son propre parcours de formation sur 5 ans</h3>
                     
-                    <p><strong>Au programme :</strong></p>
-                    <ul>
-                        <li>2 années de cycle préparatoire intégré</li>
-                        <li>3 années de cycle ingénieur</li>
-                        <li>Spécialisation progressive</li>
-                        <li>Stages en entreprise dès la 1ère année</li>
-                        <li>Projets innovants et travail en équipe</li>
-                    </ul>
+                    <p>Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
                     
-                    <p>Rejoignez une communauté dynamique d'étudiants passionnés par les technologies et l'innovation.</p>
+                    <p>Au cours de ces 3 années, les élèves acquièrent une solide formation dans les sciences et les technologies numériques tout en approfondissant une spécialité dès la première année après le baccalauréat. Plusieurs passerelles sont possibles durant les 3 premières années si l'étudiant souhaite changer de cycle.</p>
                     
-                    <a href="contact.html" class="cta-button">Postuler maintenant</a>
+                    <p>Après la deuxième année, il est possible de choisir une poursuite d'études sous statut étudiant ou d'opter pour un contrat d'apprentissage.</p>
+                    
+                    <p>Au niveau Master 1, qu'il soit sous statut étudiant ou apprenti, chaque élève accède à un large choix de domaines professionnels sans concours ni critère de classement.</p>
+                    
+                    <a href="contact.html" class="cta-button">En savoir plus</a>
                 </div>
                 <div class="img-content">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Étudiants ISEN en cours" style="width: 100%; height: 300px; object-fit: cover;">
-                    <p class="img-caption">Campus ISEN - Environnement d'apprentissage moderne</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- DEUXIEME SECTION TEXT_IMG -->
-        <section class="text-img-section">
-            <div class="text-img-content reverse">
-                <div class="text-content">
-                    <h2>Une Pédagogie Innovante</h2>
-                    <p>Notre approche pédagogique combine théorie et pratique pour former des ingénieurs adaptés aux défis de demain.</p>
-                    
-                    <p><strong>Nos points forts :</strong></p>
-                    <ul>
-                        <li>Effectifs réduits pour un suivi personnalisé</li>
-                        <li>Laboratoires équipés des dernières technologies</li>
-                        <li>Partnerships avec plus de 200 entreprises</li>
-                        <li>Ouverture internationale avec des séjours à l'étranger</li>
-                        <li>Vie associative riche et dynamique</li>
-                    </ul>
-                    
-                    <p>Nous formons des ingénieurs capables de s'adapter, d'innover et de mener des projets complexes.</p>
-                </div>
-                <div class="img-content">
-                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Laboratoire ISEN" style="width: 100%; height: 300px; object-fit: cover;">
-                    <p class="img-caption">Laboratoires high-tech pour la pratique</p>
+                    <img src="https://isen-ouest.fr/wp-content/uploads/2024/09/11/schema-des-etudes-isen-ouest-32.png" alt="Schéma des études ISEN Ouest" style="width: 100%; height: auto;">
+                    <p class="img-caption">Schéma des études - Parcours de formation sur 5 ans</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER (F22) -->
+    <!-- FOOTER SIMPLE (F22) -->
     <footer class="footer-simple">
         <div class="footer-content">
             <div class="footer-section">
