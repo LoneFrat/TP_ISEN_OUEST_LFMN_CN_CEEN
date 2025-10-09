@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Bac - ISEN Ouest</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header-simple {
+            background-color: #003366;
+            color: white;
+            padding: 1rem 2rem;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header-simple h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .header-nav {
+            display: flex;
+            gap: 2rem;
+        }
+        .header-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .header-nav a:hover {
+            background-color: #002244;
+        }
+        .header-nav a.active {
+            background-color: #004488;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-simple">
+        <div class="header-content">
+            <h1>ISEN OUEST</h1>
+            <nav class="header-nav">
+                <a href="index.html">Accueil</a>
+                <a href="postbac.html" class="active">Post-Bac</a>
+                <a href="formations.html">Formations</a>
+                <a href="apprentissage.html">Apprentissage</a>
+                <a href="devenir_inge.html">Devenir Ingénieur</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="min-height: 400px; padding: 2rem; max-width: 1200px; margin: 0 auto;">
+        <h2>Page Post-Bac</h2>
+        <p style="margin-top: 1rem;">Le contenu de la page Post-Bac sera ajouté dans les fonctionnalités suivantes.</p>
+    </main>
+
+    <footer style="background-color: #f8f9fa; padding: 2rem; text-align: center; margin-top: 2rem;">
+        <p>© 2024 ISEN Ouest - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
